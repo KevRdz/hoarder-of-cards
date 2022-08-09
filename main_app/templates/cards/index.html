@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/cats/cat-index.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+  <h1>Cat List</h1>
+</section>
+
+<section class="card-container">
+  {% for card in cards %}
+    <div class="card">
+      <a href="/cards/{{card.id}}">
+        <div class="card-content">
+          <h2 class="card-title">{{ card.name }}</h2>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</section>
+
+{% endblock %}

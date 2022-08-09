@@ -5,7 +5,7 @@
 <link 
   rel="stylesheet"
   type="text/css"
-  href="{% static 'css/cats/cat-index.css' %}"
+  href="{% static 'css/cards/card-index.css' %}"
 />
 {% endblock %}
 
@@ -18,7 +18,7 @@
 <section class="card-container">
   {% for card in cards %}
     <div class="card">
-      <a href="/cards/{{card.id}}">
+      <a href="{%url 'cards_detail' card.id%}">
         <div class="card-content">
           <h2 class="card-title">{{ card.name }}</h2>
         </div>

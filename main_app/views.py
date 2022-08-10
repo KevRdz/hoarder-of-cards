@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Card
-from django.views.generic.edit import CreateView, DeleteView
+from django.views.generic.edit import CreateView, DeleteView, UpdateView
 
 # Create your views here.
 def home(request):
@@ -25,3 +25,7 @@ class CardCreate(CreateView):
 class CardDelete(DeleteView):
   model = Card
   success_url = '/cards/'
+
+class CardUpdate(UpdateView):
+  model=Card
+  fields = ['name', 'nation', 'position', 'team']

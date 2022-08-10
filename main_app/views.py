@@ -1,10 +1,11 @@
 from django.shortcuts import render
 from .models import Card
 from django.views.generic.edit import CreateView, DeleteView, UpdateView
+from django.contrib.auth.views import LoginView
 
 # Create your views here.
-def home(request):
-  return render(request, 'home.html')
+class Home(LoginView):
+  template_name = 'home.html'
 
 def about(request):
   return render(request, 'about.html')

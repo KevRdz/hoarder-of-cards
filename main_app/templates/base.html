@@ -19,8 +19,9 @@
   <header>
     <nav>
       <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/cards">All Cards</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'cards_index' %}">All Cards</a></li>
+        <li><a href="{% url 'cards_create' %}">Add a Card</a></li>
       </ul>
     </nav>
   </header>

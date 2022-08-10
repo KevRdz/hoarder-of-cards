@@ -17,6 +17,9 @@
     <h2>{{ card.nation }}</h2>
     <h2>{{ card.position }}</h2>
     <h2>{{ card.team }}</h2>
+    <div class='card-actions'>
+      <a href="{% url 'cards_delete' card.id %}" class='btn danger'>Delete</a>
+    </div>
   </div>
 </section>
 

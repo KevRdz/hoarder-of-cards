@@ -7,4 +7,5 @@ urlpatterns = [
   path('cards/', views.cards_index, name='cards_index'),
   path('cards/<int:card_id>/', views.cards_detail, name='cards_detail'),
   path('cards/create/', views.CardCreate.as_view(), name='cards_create'),
+  path('cards/<int:pk>/delete/', views.CardDelete.as_view(), name='cards_delete'),
 ]

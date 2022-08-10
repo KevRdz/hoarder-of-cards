@@ -19,9 +19,15 @@
   <header>
     <nav>
       <ul>
-        <li><a href="{% url 'cards_index' %}">All Cards</a></li>
-        <li><a href="{% url 'cards_create' %}">Add a Card</a></li>
-        <li><a href="{% url 'about' %}">About</a></li>
+        {% if user.is_authenticated %}
+          <li><a href="{% url 'cards_index' %}">All Cards</a></li>
+          <li><a href="{% url 'cards_create' %}">Add a Card</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'logout' %}">Log Out</a></li>
+        {%else%}
+          <li><a href="{% url 'home' %}">Login</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+        {%endif%}
       </ul>
     </nav>
   </header>

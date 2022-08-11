@@ -6,8 +6,29 @@ a{
 h1{
   color: white;
   font-size: xx-large;
+  text-align: center;
 }
 
 h2{
   font-size: large;
+}
+
+.card{
+  display: grid;
+  grid-row: auto;
+  box-shadow: 0 3px 20px 0 #00cfb7;
+  cursor: pointer;
+  height: 280px;
+  position: relative;
+  width: 243px;
+  text-align: center;
+  margin: 30px;
+  background-color: #8A1538;
+  float: left;
+}
+
+img{
+  height: 200px;
+  width: 243px;
+  align-items: center;
 }

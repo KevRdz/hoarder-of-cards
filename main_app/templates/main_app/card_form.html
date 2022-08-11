@@ -7,14 +7,13 @@
 
 {% block content %}
 
-{% if card %}
-  <h1>Edit {{card.name}}</h1>
-{% else %}
-  <h1>Add a Card</h1>
-{% endif %}
 
 <div class="page-header">
-  {% comment %} <h1>Add a Card</h1> {% endcomment %}
+  {% if card %}
+    <h1>Edit {{card.name}}</h1>
+  {% else %}
+    <h1>Add a Card</h1>
+  {% endif %}
 </div>
 {% comment %} 
   Leaving the action empty makes the form post to the same url used to display it
@@ -30,7 +29,7 @@
     {% endcomment %}
     {{ form.as_table }}
   </table>
-  <button type="submit" class="btn submit">Submit!</button>
+  <button type="submit" class="btn-submit">Submit!</button>
 </form>
 
 {% endblock %}

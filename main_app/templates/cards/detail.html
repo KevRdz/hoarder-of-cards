@@ -13,10 +13,10 @@
 
 <section class="cat-container">
   <div class="cat-details">
-    <h1>{{ card.name }}</h1>
-    <h2>{{ card.nation }}</h2>
-    <h2>{{ card.position }}</h2>
-    <h2>{{ card.team }}</h2>
+    <h1>Name: {{ card.name }}</h1>
+    <h2>Nation: {{ card.nation }}</h2>
+    <h2>Position: {{ card.position }}</h2>
+    <h2>Team: {{ card.team }}</h2>
     <div class='card-actions'>
       <a href="{% url 'cards_update' card.id %}">Edit</a>
       <a href="{% url 'cards_delete' card.id %}">Delete</a>

@@ -3,7 +3,8 @@ hthml{
 }
 
 body{
-  background-color: #550065;
+  background: url(../images/background-img3.png) no-repeat center center fixed;
+  background-size: cover;
 }
 
 header {
@@ -40,11 +41,6 @@ nav {
   margin-left: auto;
   display: flex;
   justify-content: center;
-  border-radius: 100px;
-}
-
-nav ul {
-  flex-wrap: nowrap;
 }
 
 body {
@@ -56,18 +52,18 @@ body {
     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
     'Helvetica Neue', sans-serif;
   min-height: 100vh;
-  --nav-bg: rgba(104, 197, 248, .7);
+  /* --nav-bg: rgba(104, 197, 248, .7); */
   --nav-bg-ff: #ffbf00;
   --borders: #ff4700 solid 5px;
   --text-color: white;
   --link-hover-color: #550065;
-  --button-bg: rgb(245, 245, 245);
-  --button-bg-hover: rgb(226, 226, 226);
-  --card-box-shadow: 5px 5px 6px -1px #AAA;
-  --font-xtreme: 4.2rem;
+  /* --button-bg: rgb(245, 245, 245); */
+  /* --button-bg-hover: rgb(226, 226, 226); */
+  /* --card-box-shadow: 5px 5px 6px -1px #AAA; */
+  /* --font-xtreme: 4.2rem;
   --font-xxl: 3.6rem;
   --font-xl: 2.4rem;
   --font-l: 1.8rem; 
-  --font-reg: 1.6rem;
-  --card-border-radius: 100px;
+  --font-reg: 1.6rem; */
+  /* --card-border-radius: 100px; */
 }

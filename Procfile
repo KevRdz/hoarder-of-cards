@@ -1,1 +1,1 @@
-web: gunicorn hoarder-of-cards.wsgi
+web: gunicorn hoarderofcards.wsgi

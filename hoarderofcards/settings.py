@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+# import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -117,6 +118,12 @@ USE_I18N = True
 
 USE_TZ = True
 
+DEBUG = env('DEBUG') == 'True' 
+
+SECRET_KEY = env('SECRET_KEY')
+
+DEBUG_PROPAGATE_EXCEPTIONS = True
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
@@ -130,3 +137,8 @@ LOGOUT_REDIRECT_URL = 'home'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+WSGI_APPLICATION = 'hoarderofcards.wsgi.application'
+# catcollector is the project name
+
+# django_heroku.settings(locals())

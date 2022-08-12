@@ -16,13 +16,13 @@
     <nav>
       <ul>
         {% if user.is_authenticated %}
-          <li><a href="{% url 'cards_index' %}">All Cards</a></li>
+          <li><a href="{% url 'cards_index' %}">Card Collection</a></li>
           <li><a href="{% url 'cards_create' %}">Add a Card</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
+          {% comment %} <li><a href="{% url 'about' %}">About</a></li> {% endcomment %}
           <li><a href="{% url 'logout' %}">Log Out</a></li>
         {%else%}
           <li><a href="{% url 'home' %}">Login</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
+          {% comment %} <li><a href="{% url 'about' %}">About</a></li> {% endcomment %}
           <li><a href="{% url 'signup' %}">Sign Up</a></li>
         {%endif%}
       </ul>

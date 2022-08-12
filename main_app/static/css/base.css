@@ -5,6 +5,7 @@ hthml{
 body{
   background: url(../images/background-img3.png) no-repeat center center fixed;
   background-size: cover;
+  text-align: center;
 }
 
 header {
@@ -56,7 +57,7 @@ body {
   min-height: 100vh;
   /* --nav-bg: rgba(104, 197, 248, .7); */
   --nav-bg-ff: #ffbf00;
-  --borders: #ff4700 solid 5px;
+  --borders: #ff4700 solid 3px;
   --text-color: white;
   --link-hover-color: #550065;
   /* --button-bg: rgb(245, 245, 245); */
@@ -92,7 +93,7 @@ input{
 
 .btn-submit{
   background-color: #ffbf00;
-  border: 5px solid #ff4700;
+  border: 3px solid #ff4700;
   color: white;
   padding: 8px 8px;
   text-align: center;
@@ -113,4 +114,8 @@ p{
 
 .login{
   text-align: center;
+}
+
+h2{
+  color: white;
 }

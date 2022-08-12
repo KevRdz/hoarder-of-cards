@@ -18,8 +18,8 @@
     <h2>Position: {{ card.position }}</h2>
     <h2>Team: {{ card.team }}</h2>
     <div class='card-actions'>
-      <a href="{% url 'cards_update' card.id %}">Edit</a>
-      <a href="{% url 'cards_delete' card.id %}">Delete</a>
+      <a href="{% url 'cards_update' card.id %}"><button class='btn-submit'>Edit</button></a>
+      <a href="{% url 'cards_delete' card.id %}"><button class='btn-submit'>Delete</button></a>
     </div>
   </div>
 </section>

@@ -2,7 +2,14 @@ body{
   color: white;
 }
 
-a:-webkit-any-Link{
+a{
   color: white;
   text-decoration: none;
+  text-align: center;
+  align-items: center;
+}
+
+.action-btn{
+  text-align: center;
+  align-items: center;
 }

@@ -119,3 +119,8 @@ p{
 h2{
   color: white;
 }
+
+.card-img{
+  width: 40px;
+  height: 40px;
+}

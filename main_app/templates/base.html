@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  {% comment %} <link rel="shortcut fav" type='image/png' href="{% static 'images/icons8-cards-16.png'%}"> {% endcomment %}
+  <link rel="icon" type='image/png' href="{% static 'images/card-favicon.png'%}">
   <title>Hoarder of Cards</title>
   <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
   {% block head %}
@@ -16,6 +16,7 @@
     <nav>
       <ul>
         {% if user.is_authenticated %}
+          <img class='card-img' src="{% static 'images/icons8-cards-50.png' %}" alt="card-pic">
           <li><a href="{% url 'cards_index' %}">Card Collection</a></li>
           <li><a href="{% url 'cards_create' %}">Add a Card</a></li>
           {% comment %} <li><a href="{% url 'about' %}">About</a></li> {% endcomment %}
